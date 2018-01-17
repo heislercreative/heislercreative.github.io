@@ -4,7 +4,7 @@ header-img: img/home-bg.png
 email: learn@heislercreative.com
 copyright_name: heislercreative
 description: > # this means to ignore newlines until "baseurl:"
-  Developing, from idea to reality
+  Developing: from idea to reality
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  heislercreative
