@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Building the National Parks CLI Gem"
-date:       2018-03-03 04:18:47 +0000
+date:       2018-03-02 23:18:48 -0500
 permalink:  building_the_national_parks_cli_gem
 ---
 
