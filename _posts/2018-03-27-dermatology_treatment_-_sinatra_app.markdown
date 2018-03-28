@@ -39,4 +39,4 @@ def current_condition
       @condition ||= current_patient.conditions.find_by_id(params[:cid])
 end
 ```
-The end result was functioning code I could be happy seeing and understanding, which is the whole point of it all, isn't it?
+The end result was functioning code I could be happy looking at and understanding, which is the whole point of it all, isn't it?
