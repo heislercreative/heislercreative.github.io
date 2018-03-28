@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Dermatology Treatment  - Sinatra Project"
+title:      "Dermatology Treatment : Sinatra Project"
 date:       2018-03-27 21:26:57 -0400
 permalink:  dermatology_treatment_-_sinatra_app
 ---
