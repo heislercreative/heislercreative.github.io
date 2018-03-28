@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Dermatology Treatment  - Sinatra App"
-date:       2018-03-28 01:26:57 +0000
+title:      "Dermatology Treatment  - Sinatra Project"
+date:       2018-03-27 21:26:57 -0400
 permalink:  dermatology_treatment_-_sinatra_app
 ---
 
@@ -18,6 +18,10 @@ While rudimentary, my approach starting out was to created 3 essential models:
 I made a perhaps overly-ambitious goal of creating a functioning app over the weekend, which in all fairness, I did accomplish. However, I wasn't completely satisfied with how I originally implented the authentication methods of confirming the provider was logged in and that only that providers patients could be edited by that provider. I found a way to make this work in the erb view but decided that it should ultimately be the *controllers'* responsibility to handle authentication.
 
 So, I started refactoring. **And I broke everything.** Thankfully, reviewing a previous lecture by Avi both inspired and guided me through the frustration of taking a working product, partially destroying it, and putting it back together in a way that felt correct and scalable.
+
+The app uses 2 primary layers of authentication:
+* **logged_in?** prevents non-users from accessing the patient and condition views.
+* **current_user** restricts access to a provider's patients (and their conditions) to that specific provider only.
 
 I even took it a step further after releasing the amount of repeat code in my controllers and created simplified helper methods to clean things up, such as:
 ```
