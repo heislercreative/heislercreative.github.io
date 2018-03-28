@@ -23,7 +23,7 @@ The app uses 2 primary layers of authentication:
 * **logged_in?** prevents non-users from accessing the patient and condition views.
 * **current_user** restricts access to a provider's patients (and their conditions) to that specific provider only.
 
-I even took it a step further after releasing the amount of repeat code in my controllers and created simplified helper methods to clean things up, such as:
+I took it a couple steps further by implementing Bootstrap alerts to display validation errors and - after realizing the amount of repeat code in my controllers - creating simplified helper methods to clean things up, such as:
 ```
 def current_user
       @provider ||= Provider.find_by(username: session[:username]) if session[:username]
